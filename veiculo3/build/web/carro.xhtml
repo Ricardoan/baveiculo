@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html   xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    
+    <f:view contentType="text/html">
+    <h:head>
+       
+        <title>Baveículos</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       <h:outputStylesheet library="css" name="estilo.css" />
+       <script type="text/javascript" src="resources/js/script2.js">  
+            </script>
+            
+         
+        
+    </h:head>
+    <h:body>
+   
+      <div id="geral_home">
+    
+    <div class="topo_home">
+    	<div class="topo_central">
+        <div class="topo_slogan">
+     	
+    	</div> <!-- fim topo_slogan -->
+        <div class="topo_busca">
+        	<div class="topo_busca2">
+            	 
+     		    <form action="" method="get" >
+     		      <input class="test5" name="palavra" type="text" value=""   />
+     		      <input class="buton" name="input" type="submit" value="buscar" />
+   		      </form>
+             
+			</div>
+    	</div> <!-- fim topo_busca -->
+    </div><!-- fim topo_central -->
+    </div> <!-- fim topo_home -->
+    
+  
+    
+  <div class="corpo">  
+   
+  <div class="caixa_texto">
+      
+ 
+
+<h:form id="formulario3">
+                    <h:panelGrid>
+                       
+                          <p:panel header="CADASTRAR CARRO">
+                           
+                                
+                              <h:panelGrid columns="2">                              
+                                  
+                                 
+                                  
+                                  <p:outputLabel value="INFORME O VEICULO:" />
+                                <p:selectOneMenu id="veiculo" value="#{autobean.auto.veiculo}" style="width:308px">
+                                    <f:selectItem itemLabel="Ford_Ka" itemValue="Ford_Ka" />
+                                     <f:selectItem itemLabel="Ford_Ka" itemValue="Ford_Ka" />
+                                     <f:selectItem itemLabel="Fiesta" itemValue="Fiesta" />
+                                    <f:selectItem itemLabel="Focus" itemValue="Focus" />
+                                    <f:selectItem itemLabel="Ranger" itemValue="Ranger" />
+                                    
+                                </p:selectOneMenu>
+                                
+                                 
+                                <p:commandButton value="Cadastrar" ajax = "false" action="#{autobean.adicionarAuto()}"/>                        
+                                
+                                
+                                <f:param name="productId" value="10" />
+                                 </h:panelGrid>
+                            
+                            <br />
+                             
+                            <p:link outcome="index" value="Voltar para tela inicial"  />
+                         </p:panel>  
+                         
+                        
+                    </h:panelGrid>
+                    
+                </h:form>
+    
+  </div>  <!-- fim caixa de texto -->
+ 
+  
+
+  </div> <!-- fim corpo-->
+   <div class="rodape">
+    	<div class="rodape_central">
+   			<div class="rodape_slogan">
+  		 	
+            </div><!--fim rodape_slogan-->
+    	<div class="rodape_frase">
+  		 <ul>
+    		
+            <li><a href="index.html" class="active" >© Todos os direios reservados R.N</a></li>
+                </ul>
+    	</div><!-- rodape frase-->
+    	</div><!-- rodape central-->
+   </div> <!--fim rodape-->
+  
+    </div><!-- fim geral_home -->
+
+   </h:body>
+   </f:view>
+</html>  

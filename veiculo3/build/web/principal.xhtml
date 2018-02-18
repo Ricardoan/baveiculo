@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html   xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    
+    <f:view contentType="text/html">
+    <h:head>
+       
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+       <h:outputStylesheet library="css" name="estilo.css" />
+      
+            
+         
+        
+    </h:head>
+    <h:body>
+   
+      <div id="geral_home">
+    
+    <div class="topo_home">
+    	<div class="topo_central">
+        <div class="topo_slogan">
+     	
+    	</div> <!-- fim topo_slogan -->
+        <div class="topo_busca">
+        	<div class="topo_busca2">
+            	 
+     		    <form action="" method="get" >
+     		      <input class="test5" name="palavra" type="text" value=""   />
+     		      <input class="buton" name="input" type="submit" value="buscar" />
+   		      </form>
+             
+			</div>
+    	</div> <!-- fim topo_busca -->
+    </div><!-- fim topo_central -->
+    </div> <!-- fim topo_home -->
+    
+  
+    
+  <div class="corpo">  
+   
+  <div class="caixa_texto">
+      
+  	<h:form>  
+    <p:growl id="messages"/>
+ 
+    <p:menubar>
+        <p:submenu label="Selecione a marca" >
+             <p:menuitem value="Ford" url="http://localhost:8084/veiculo3/faces/carro.xhtml" />
+            <p:separator />
+            <p:menuitem value="Chevrolet" url="http://localhost:8084/veiculo2/faces/Chevrolet.xhtml" />
+            <p:separator />
+            <p:menuitem value="Fiat" url="http://localhost:8084/veiculo2/Fiat.xhtml" />
+            <p:separator />
+            <p:menuitem value="Volkswagem" url="http://localhost:8084/veiculo2/Volkswagem.xhtml" />
+            
+        </p:submenu>
+ 
+        <p:submenu label="Cadastrar Usuário" >
+            <p:menuitem value="Cadastrar Usuario" url="http://localhost:8084/veiculo3/faces/cadastrar.xhtml"  />
+            <p:menuitem value="Listar Usuario" url="#"  />
+            <p:menuitem value="Excluir Usuario" url="#"  />
+        </p:submenu>
+ 
+ 
+        
+        <p:submenu label="Inserir" >
+            <p:menuitem value="Carro" url="http://localhost:8084/farmaco2/faces/ram.xhtml" />
+            <p:menuitem value="Marca" url="http://localhost:8084/farmaco2/faces/medicamento.xhtml" />
+            
+            
+        </p:submenu>
+           
+        
+        <p:menuitem value="sair" url="http://www.primefaces.org" />
+ 
+        
+    </p:menubar>
+</h:form>	 
+    
+  </div>  <!-- fim caixa de texto -->
+ 
+  
+
+  </div> <!-- fim corpo-->
+   <div class="rodape">
+    	<div class="rodape_central">
+   			<div class="rodape_slogan">
+  		 	
+            </div><!--fim rodape_slogan-->
+    	<div class="rodape_frase">
+  		 <ul>
+    		
+            <li><a href="index.html" class="active" >© Todos os direios reservados R.N</a></li>
+                </ul>
+    	</div><!-- rodape frase-->
+    	</div><!-- rodape central-->
+   </div> <!--fim rodape-->
+  
+    </div><!-- fim geral_home -->
+
+   </h:body>
+   </f:view>
+</html>  
